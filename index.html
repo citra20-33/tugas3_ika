@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Madical</title>
+    <link rel="icon" href="assets/logo.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Top Bar-->
+    <div class="top-bar">
+        <div class="container-top">
+          <div><i class="fas fa-clock"></i> Hubungi Kami ||</div>
+          <div><i class="fas fa-phone-alt"></i>Selamat Datang</div>
+        </div>
+    </div>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <div class="container-fluid">
+        <!--logo-->
+        <img src="asset/logo.jpg" alt="dokter" width="70px">
+        <a class="navbar-brand" href="#">Central Madical</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#beranda">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">Tentang Kami</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Selengkapnya
+              </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#penawaran">Layanan</a></li>
+              <li><a class="dropdown-item" href="#galery">Failitas Kesehatan</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="https://web.whatsapp.com">Hubungi Kami</a></li>
+            </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  <!--Carausel-->
+  <div id="beranda">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="asset/dokter1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Dokter RS Central Madical</h5>
+            <p>Ini merupakan beberapa dokter spesialis dan dokter Bedah RS Central Madical.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="asset/doktr2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Kegiatan PKG</h5>
+            <p>PKG (Pemeriksaan Kesehatan Gratis) tersedia di RS Central Madical.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="asset/doktr4.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Imunisasi Pada Anak</h5>
+            <p>RS Central Madical juga menyediakan pemeriksaan/ kegiatan imunisasi gratis pada anak.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</head>
+
+<!--Form-->
+  <div class="container">
+    <div class="tab">Cari Dokter</div>
+    <div class="form-group">
+      <div class="form-item">
+        <label for="nama-dokter">Nama Dokter</label>
+        <input type="text" id="nama-dokter" placeholder="Nama Dokter">
+      </div>
+      <div class="form-item">
+        <label for="rumah-sakit">Rumah Sakit</label>
+        <select id="rumah-sakit">
+          <option>Seluruh Cabang RSCM</option>
+        </select>
+      </div>
+      <div class="form-item">
+        <label for="spesialisasi">Spesialisasi</label>
+        <input type="text" id="spesialisasi" placeholder="Pilih Spesialisasi">
+      </div>
+      <div class="form-item">
+        <label for="tanggal">Pilihan Hari</label>
+        <input type="date" id="tanggal">
+      </div>
+    </div>
+    <div class="actions">
+      <button class="btn btn-reset">Reset</button>
+      <button class="btn btn-search">Cari Dokter</button>
+    </div>
+  </div>
+</html>
+
+  <!--Galery-->
+  <h1 id="galery" >Galeri Foto</h1>
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">Semua Foto</button>
+    <button class="filter-btn" data-filter="fasilitas">Fasilitas</button>
+    <button class="filter-btn" data-filter="dokumentasi">Dokumentasi</button>
+  </div>
+
+  <div class="gallery">
+    <div class="gallery-item fasilitas">
+      <img src="asset/fasilitas1.jpg" alt="Fasilitas">
+    </div>
+    <div class="gallery-item dokumentasi">
+      <img src="asset/praktk1.jpg" alt="Dokumentasi">
+    </div>
+    <div class="gallery-item fasilitas">
+      <img src="asset/fasilitas4.jpg" alt="Fasilitas">
+    </div>
+    <div class="gallery-item dokumentasi">
+      <img src="asset/praktk5.jpg" alt="Dokumentasi">
+    </div>
+    <div class="gallery-item fasilitas">
+      <img src="asset/fasilitas5.jpg" alt="Fasilitas">
+    </div>
+    <div class="gallery-item dokumentasi">
+      <img src="asset/praktk4.jpg" alt="Dokumentasi">
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="imgModal">
+  </div>
+  <script>
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const modal = document.getElementById("myModal");
+    const modalImg = document.getElementById("imgModal");
+    const closeBtn = document.querySelector(".close");
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelector('.filter-btn.active').classList.remove('active');
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+
+        galleryItems.forEach(item => {
+          if (filter === 'all' || item.classList.contains(filter)) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    document.querySelectorAll('.gallery img').forEach(img => {
+      img.addEventListener('click', () => {
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      });
+    });
+
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  <!--Tentang-->
+
+  <section id ="about" class = "py-5">
+    <div class = "container">
+        <div class = "row gy-lg-5 align-items-center">
+            <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                <div class = "title pt-3 pb-5">
+                    <h2 class = "position-relative d-inline-block ms-4">Tentang Rumah Sakit CM.</h2>
+                </div>
+                <p class = "lead text-muted">🏥 Profil Umum Rumah Sakit Central Medical</p>
+                <p>
+                  Central Medical adalah rumah sakit modern yang mengutamakan pelayanan kesehatan berkualitas tinggi, profesionalisme, dan kenyamanan pasien. Dilengkapi dengan teknologi medis terkini dan tim tenaga medis yang berdedikasi, Central Medical hadir sebagai pusat layanan kesehatan terpercaya untuk masyarakat.
+                </p>
+                <br>
+                Kami menyediakan berbagai layanan medis mulai dari pemeriksaan umum, spesialis, instalasi gawat darurat (IGD) 24 jam, hingga layanan rawat inap dan bedah dengan standar keselamatan tinggi. Dengan mengusung prinsip "Pelayanan Cepat, Tepat, dan Ramah", kami berkomitmen menjadi mitra kesehatan terbaik bagi Anda dan keluarga.
+
+              </p>
+            </div>
+            <div class = "col-lg-6 order-lg-0">
+                <img src = "asset/dokter1.jpg" alt = "" class = "img-fluid">
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!--Promo Paket-->
+  <section id = "penawaran" class = "py-5">
+    <div class = "container">
+        <div class = "title text-center py-5">
+            <h2 class = "position-relative d-inline-block">Penawaran Layanan</h2>
+        </div>
+
+        <div class = "special-list row g-0">
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class = "special-img position-relative overflow-hidden">
+                    <img src = "asset/brosur1.jpg" class = "w-100">
+                    <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                        <i class = "fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class = "text-center">
+                    <p class = "text-capitalize mt-3 mb-1">Paket Kelas BPJS</p>
+                    <span class = "fw-bold d-block">Sesuai kelas</span>
+                    <a href = "#" class = "btn btn-primary mt-3">Hubungi Sekarang</a>
+                </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class = "special-img position-relative overflow-hidden">
+                    <img src = "asset/brosur2.jpg" class = "w-100">
+                    <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                        <i class = "fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class = "text-center">
+                    <p class = "text-capitalize mt-3 mb-1">Paket PKG</p>
+                    <span class = "fw-bold d-block">Gratis</span>
+                    <a href = "#" class = "btn btn-primary mt-3">Hubungi Sekarang</a>
+                </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class = "special-img position-relative overflow-hidden">
+                    <img src = "asset/brosur4.jpg" class = "w-100">
+                    <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                        <i class = "fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class = "text-center">
+                    <p class = "text-capitalize mt-3 mb-1">Paket Rawat Jalan VIP</p>
+                    <span class = "fw-bold d-block">Rp. 300.000</span>
+                    <a href = "#" class = "btn btn-primary mt-3">Hubungi Sekarang</a>
+                </div>
+            </div>
+
+            <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
+                <div class = "special-img position-relative overflow-hidden">
+                    <img src = "asset/brosur5.jpg" class = "w-100">
+                    <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+                        <i class = "fas fa-heart"></i>
+                    </span>
+                </div>
+                <div class = "text-center">
+                    <p class = "text-capitalize mt-3 mb-1">Paket Imunisasi </p>
+                    <span class = "fw-bold d-block">Rp. 100.000</span>
+                    <a href = "#" class = "btn btn-primary mt-3">Hubungi Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Blog-->
+<section class = "py-5">
+  <div class = "container">
+      <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+          <div class = "blog-content">
+              <span class = "text-dark">Diskon sebesar Untuk Pasien Baru 40%</span>
+              <h2 class = "mt-2 mb-4 text-dark">Syarat dan Ketentuan Berlaku</h2>
+              <a href = "#" class = "btn">Kembali</a>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!--Footer-->
+<footer style="background-color: #0a4275; color: white; padding: 40px 20px;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+
+    <!-- Info Rumah Sakit -->
+    <div style="flex: 1 1 250px; margin-bottom: 20px;">
+      <h2 style="margin-bottom: 10px;">Rumah Sakit Central Madical</h2>
+      <p style="line-height: 1.6;">Memberikan layanan kesehatan terbaik dengan tenaga medis profesional dan fasilitas modern.</p>
+    </div>
+
+    <!-- Navigasi -->
+    <div style="flex: 1 1 200px; margin-bottom: 20px;">
+      <h3 style="margin-bottom: 10px;">Navigasi</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="#beranda" style="color: white; text-decoration: none;">Beranda</a></li>
+        <li><a href="#layanan" style="color: white; text-decoration: none;">Layanan</a></li>
+        <li><a href="#dokter" style="color: white; text-decoration: none;">Dokter</a></li>
+      </ul>
+    </div>
+
+    <!-- Kontak -->
+    <div style="flex: 1 1 250px; margin-bottom: 20px;">
+      <h3 style="margin-bottom: 10px;">Kontak Kami</h3>
+      <p>📍 Jl. Kesehatan No.10, Jakarta</p>
+      <p>📞 (021) 1234 5678</p>
+      <p>✉️ info@centralsehat.com</p>
+      <div style="margin-top: 10px;">
+        <a href="#" style="color: white; margin-right: 10px;">Facebook</a>
+        <a href="#" style="color: white; margin-right: 10px;">Instagram</a>
+        <a href="#" style="color: white;">Twitter</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.3); margin-top: 30px; padding-top: 15px; font-size: 14px;">
+    &copy; 2025 Rumah Sakit Central Madical. All rights reserved.
+  </div>
+</footer>
+<footer style="background-color: #0a4275; color: white; padding: 40px 20px;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+</body>
+</html>
